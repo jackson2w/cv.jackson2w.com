@@ -28,13 +28,40 @@
     Typography system based on Golden Ratio Typography (GRT) as used in
     the Focus WordPress framework by DIYThemes (diythemes.com).
     Base: 18px · Line-height: 1.618 · Content width: 660px
-    Two-font pairing: Lora (headings) + Inter (body)
+    Fonts: Lora self-hosted (woff2, subsetted) + system UI stack for body
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/Lora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Lora-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Lora-Italic.woff2" as="font" type="font/woff2" crossorigin>
 
   <style>
+    /* ============================================================
+       SELF-HOSTED FONTS
+       Lora: subsetted woff2, Latin range only (~18–19 KB each)
+       Body: system UI stack — zero network cost
+    ============================================================ */
+    @font-face {
+      font-family: 'Lora';
+      src: url('/fonts/Lora-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Lora';
+      src: url('/fonts/Lora-SemiBold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Lora';
+      src: url('/fonts/Lora-Italic.woff2') format('woff2');
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+
     /* ============================================================
        GOLDEN RATIO TYPOGRAPHY DESIGN TOKENS
        Derived from Focus WordPress theme (diythemes.com/focus/)
@@ -85,7 +112,7 @@
     }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-weight: 400;
       line-height: var(--lh);
       color: var(--ink);
@@ -124,7 +151,7 @@
     }
 
     .site-header__headline {
-      font-family: 'Inter', sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       font-size: var(--fs-xs);
       font-weight: 500;
       letter-spacing: 0.26em;
@@ -181,7 +208,7 @@
 
     /* Section heading — centred, small-caps label style */
     .resume-section__heading {
-      font-family: 'Inter', sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       font-size: var(--fs-xs);
       font-weight: 600;
       letter-spacing: 0.22em;
@@ -252,7 +279,7 @@
     }
 
     .role__dates {
-      font-family: 'Inter', sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       font-size: var(--fs-xs);
       font-weight: 400;
       color: var(--ink-muted);
