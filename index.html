@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willie Jackson — Learning, Equity &amp; Organizational Growth Leader</title>
+  <meta name="description" content="Willie Jackson is a Learning, Equity &amp; Organizational Growth Leader with 15+ years of experience in people development, leadership enablement, and organizational culture.">
+  <meta name="author" content="Willie Jackson">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Willie Jackson — L&amp;D Leader">
+  <meta property="og:description" content="15+ years driving people development, leadership enablement, and inclusive organizational culture across global teams.">
+  <meta property="og:type" content="profile">
+
+  <!--
+    Typography system based on Golden Ratio Typography (GRT) as used in
+    the Focus WordPress framework by DIYThemes (diythemes.com).
+    Base: 18px · Line-height: 1.618 · Content width: 660px
+    Two-font pairing: Lora (headings) + Inter (body)
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       GOLDEN RATIO TYPOGRAPHY DESIGN TOKENS
+       Derived from Focus WordPress theme (diythemes.com/focus/)
+       Base font: 18px · φ = 1.618 · Content: 660px · ~80 ch/line
+       Typographic scale: 18 × φⁿ → 14 / 18 / 21 / 27 / 34 / 44px
+    ============================================================ */
+    :root {
+      /* Scale */
+      --fs-xs:    14px;   /* meta, labels          */
+      --fs-sm:    15px;   /* supporting text       */
+      --fs-base:  18px;   /* body copy             */
+      --fs-md:    21px;   /* role title (h3)       */
+      --fs-lg:    27px;   /* section sub-head (h2) */
+      --fs-xl:    34px;   /* page title            */
+      --lh:       1.618;  /* golden ratio          */
+
+      /* Spacing: multiples of base line-height unit (18 × 1.618 ≈ 29px) */
+      --sp-1:   7px;
+      --sp-2:  15px;
+      --sp-3:  29px;   /* 1 unit  */
+      --sp-4:  47px;   /* φ units */
+      --sp-5:  76px;   /* φ² units */
+
+      /* Colour palette — high contrast, neutral */
+      --ink:          #181818;
+      --ink-soft:     #3d3d3d;
+      --ink-muted:    #717171;
+      --rule:         #d6d6d6;
+      --rule-heavy:   #181818;
+      --accent:       #10365a;
+      --bg:           #ffffff;
+      --bg-offset:    #f8f7f5;
+
+      /* Layout */
+      --max-w: 660px;
+      --gutter: var(--sp-3);
+    }
+
+    /* ============================================================
+       RESET
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      font-size: var(--fs-base);
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 400;
+      line-height: var(--lh);
+      color: var(--ink);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ============================================================
+       PAGE WRAPPER
+    ============================================================ */
+    .page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    /* ============================================================
+       SITE HEADER
+    ============================================================ */
+    .site-header {
+      text-align: center;
+      padding: var(--sp-5) 0 var(--sp-4);
+      border-bottom: 2px solid var(--rule-heavy);
+    }
+
+    .site-header__name {
+      font-family: 'Lora', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      font-size: clamp(32px, 9vw, 52px);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      line-height: 1.05;
+      margin-bottom: var(--sp-2);
+    }
+
+    .site-header__headline {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: var(--sp-2);
+    }
+
+    .site-header__contact {
+      font-style: normal; /* override <address> default */
+      font-size: var(--fs-sm);
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0 var(--sp-2);
+      align-items: center;
+    }
+
+    .site-header__contact a {
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .site-header__contact a:hover,
+    .site-header__contact a:focus-visible {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: var(--rule);
+      user-select: none;
+    }
+
+    /* ============================================================
+       MAIN CONTENT
+    ============================================================ */
+    .site-main {
+      padding: var(--sp-4) 0 var(--sp-5);
+    }
+
+    /* ============================================================
+       RESUME SECTIONS
+    ============================================================ */
+    .resume-section {
+      margin-bottom: var(--sp-4);
+    }
+
+    .resume-section:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Section heading — centred, small-caps label style */
+    .resume-section__heading {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-align: center;
+      padding-bottom: var(--sp-2);
+      margin-bottom: var(--sp-3);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ============================================================
+       SUMMARY
+    ============================================================ */
+    .summary__body {
+      font-size: var(--fs-base);
+      line-height: var(--lh);
+      color: var(--ink-soft);
+    }
+
+    .summary__body p + p {
+      margin-top: var(--sp-2);
+    }
+
+    /* ============================================================
+       SKILLS
+    ============================================================ */
+    .skills__list {
+      display: grid;
+      gap: var(--sp-1);
+    }
+
+    .skills__item {
+      font-size: var(--fs-sm);
+      line-height: var(--lh);
+      color: var(--ink-soft);
+    }
+
+    .skills__item strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ============================================================
+       EXPERIENCE
+    ============================================================ */
+    .experience__list {
+      display: grid;
+      gap: var(--sp-4);
+    }
+
+    /* Each role is a semantic <article> */
+    .role__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px var(--sp-2);
+      margin-bottom: 3px;
+    }
+
+    .role__title {
+      font-family: 'Lora', Georgia, serif;
+      font-size: var(--fs-md);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .role__dates {
+      font-family: 'Inter', sans-serif;
+      font-size: var(--fs-xs);
+      font-weight: 400;
+      color: var(--ink-muted);
+      white-space: nowrap;
+    }
+
+    .role__org {
+      font-size: var(--fs-sm);
+      color: var(--ink-muted);
+      font-style: italic;
+      margin-bottom: var(--sp-2);
+    }
+
+    .role__bullets {
+      list-style: none;
+      display: grid;
+      gap: var(--sp-1);
+    }
+
+    .role__bullets li {
+      font-size: var(--fs-sm);
+      line-height: var(--lh);
+      color: var(--ink-soft);
+      padding-left: 1.25em;
+      position: relative;
+    }
+
+    .role__bullets li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+    }
+
+    /* ============================================================
+       EDUCATION
+    ============================================================ */
+    .education__entry {
+      font-size: var(--fs-sm);
+      color: var(--ink-soft);
+      line-height: var(--lh);
+    }
+
+    .education__entry strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ============================================================
+       SITE FOOTER
+    ============================================================ */
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      padding: var(--sp-3) 0;
+      text-align: center;
+      font-size: var(--fs-xs);
+      color: var(--ink-muted);
+    }
+
+    .site-footer a {
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: var(--accent);
+    }
+
+    /* ============================================================
+       FOCUS OUTLINE — accessibility
+    ============================================================ */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    /* ============================================================
+       RESPONSIVE — 720px breakpoint (matches GRT reflow logic)
+    ============================================================ */
+    @media (max-width: 720px) {
+      :root {
+        --fs-base: 16px;
+        --gutter:  var(--sp-2);
+      }
+
+      .site-header__name {
+        letter-spacing: 0.07em;
+      }
+
+      .site-header__contact {
+        gap: var(--sp-1) var(--sp-2);
+      }
+
+      .role__header {
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --fs-base: 15px;
+        --sp-5: 52px;
+      }
+    }
+
+    /* ============================================================
+       PRINT
+    ============================================================ */
+    @media print {
+      :root { --fs-base: 10.5pt; --max-w: 100%; }
+
+      body { color: #000; background: #fff; }
+
+      .site-header { padding: 0.4in 0 0.25in; }
+      .site-main    { padding: 0.2in 0; }
+
+      .site-header__contact a,
+      .site-footer  a { color: #000; text-decoration: none; }
+
+      .site-header,
+      .resume-section { page-break-inside: avoid; }
+
+      /* Show full URL for print */
+      .site-header__contact a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #555;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- =====================================================
+         SITE HEADER
+    ====================================================== -->
+    <header class="site-header">
+      <h1 class="site-header__name">Willie Jackson</h1>
+      <p class="site-header__headline">Learning, Equity &amp; Organizational Growth Leader</p>
+      <address class="site-header__contact">
+        <a href="mailto:willie@williejackson.com">willie@williejackson.com</a>
+        <span class="contact-sep" aria-hidden="true">·</span>
+        <span>Dallas, TX</span>
+        <span class="contact-sep" aria-hidden="true">·</span>
+        <a href="https://linkedin.com/in/willieljackson" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/willieljackson
+        </a>
+      </address>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+    <main class="site-main">
+
+      <!-- Career Summary -->
+      <section class="resume-section" aria-labelledby="heading-summary">
+        <h2 class="resume-section__heading" id="heading-summary">Career Summary</h2>
+        <div class="summary__body">
+          <p>Learning, Equity &amp; Organizational Growth Leader with 15+ years of experience driving people development, leadership enablement, and organizational culture initiatives across global teams, building inclusive learning systems that harmonize development, belonging, and performance.</p>
+          <p>Core competencies include learning strategy design, inclusive leadership development, global organizational culture design, and expert facilitation.</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="resume-section" aria-labelledby="heading-skills">
+        <h2 class="resume-section__heading" id="heading-skills">Skills</h2>
+        <dl class="skills__list">
+          <div class="skills__item">
+            <dt style="display:inline"><strong>Software &amp; Tools:</strong></dt>
+            <dd style="display:inline"> Learning Management Systems (LMS) · Notion · Asana · Trello · Google Workspace · Miro · MS Office</dd>
+          </div>
+          <div class="skills__item">
+            <dt style="display:inline"><strong>Learning &amp; Development:</strong></dt>
+            <dd style="display:inline"> Leadership Program Design · Inclusive Learning Architecture · Manager Enablement · Feedback Systems</dd>
+          </div>
+          <div class="skills__item">
+            <dt style="display:inline"><strong>Organizational Transformation:</strong></dt>
+            <dd style="display:inline"> Culture &amp; Belonging Strategy · DEI Integration &amp; Advisory · Survey Implementation · Team Enablement</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="resume-section" aria-labelledby="heading-experience">
+        <h2 class="resume-section__heading" id="heading-experience">Professional Experience</h2>
+        <div class="experience__list">
+
+          <!-- Role 1 -->
+          <article aria-labelledby="role-managing-principal">
+            <header class="role__header">
+              <h3 class="role__title" id="role-managing-principal">Managing Principal</h3>
+              <time class="role__dates" datetime="2015-01">January 2015 – Present</time>
+            </header>
+            <p class="role__org">Independent Consultant · Dallas, TX</p>
+            <ul class="role__bullets">
+              <li>Partners with executives and HR leaders to design learning strategies that embed equity, inclusion, and psychological safety into leadership frameworks and organizational culture, enhancing global performance and internal accountability.</li>
+              <li>Collaborates with senior partners to identify performance gaps and develop leadership programs focused on inclusive communication, cross-cultural collaboration, and manager enablement to strengthen belonging and engagement across global teams.</li>
+              <li>Designs and scales inclusive leadership development programs for 50+ clients across diverse business sectors, training 450+ managers in anti-discrimination practices and equitable decision-making — resulting in a 35% improvement in team inclusion scores.</li>
+            </ul>
+          </article>
+
+          <!-- Role 2 -->
+          <article aria-labelledby="role-partner-readyset">
+            <header class="role__header">
+              <h3 class="role__title" id="role-partner-readyset">Partner &amp; Head of Growth</h3>
+              <time class="role__dates" datetime="2018-05/2024-12">May 2018 – December 2024</time>
+            </header>
+            <p class="role__org">ReadySet · Oakland, CA (Remote)</p>
+            <ul class="role__bullets">
+              <li>Led global operations as a strategic talent business partner to design and scale inclusive leadership programs for 200+ global clients, integrating DEIB principles into manager enablement, learning architecture, facilitation, and performance systems.</li>
+              <li>Examined learning and performance pain points to design and manage complex cross-functional systems connecting learning, belonging, accountability, and impact — increasing program adoption by 30% and participant satisfaction by 40%.</li>
+              <li>Partnered with senior stakeholders across HR, Communications, and People Ops to operationalize learning strategies that advanced equity, strengthened engagement, and improved leadership capability across distributed teams.</li>
+            </ul>
+          </article>
+
+          <!-- Role 3 -->
+          <article aria-labelledby="role-founder-abernathy">
+            <header class="role__header">
+              <h3 class="role__title" id="role-founder-abernathy">Founder &amp; Publisher</h3>
+              <time class="role__dates" datetime="2015-01/2018-04">January 2015 – April 2018</time>
+            </header>
+            <p class="role__org">Abernathy Magazine · Harlem, NYC</p>
+            <ul class="role__bullets">
+              <li>Launched and scaled a media platform dedicated to amplifying stories of Black leadership, identity, and belonging — publishing 400+ original pieces and producing community events that advanced representation in media for senior executives nationally.</li>
+              <li>Secured corporate sponsorships and strategic partnerships surpassing $200K+ in total partnership value, aligning brand storytelling with social impact, equity, and professional growth narratives across industries.</li>
+              <li>Directed editorial, contributor, and event strategy to elevate visibility for emerging voices globally, fostering a culture of mentorship, authenticity, and shared learning to enhance individual and collective growth.</li>
+            </ul>
+          </article>
+
+          <!-- Role 4 -->
+          <article aria-labelledby="role-altmba">
+            <header class="role__header">
+              <h3 class="role__title" id="role-altmba">Founding Technical Lead</h3>
+              <time class="role__dates" datetime="2015-05/2017-10">May 2015 – October 2017</time>
+            </header>
+            <p class="role__org">Seth Godin's altMBA · Hastings-on-Hudson, NY</p>
+            <ul class="role__bullets">
+              <li>Built the digital learning infrastructure for a global leadership development program that has transformed 7,000+ professionals across 100+ countries, enabling real-time collaboration and peer-to-peer learning — positioning the brand as a leading L&amp;D hub.</li>
+              <li>Partnered with program leadership, vendors, and global stakeholders to design and refine the collective curriculum, strengthen facilitation models end-to-end, and enhance accessibility and inclusivity for diverse cohorts.</li>
+              <li>Applied data and feedback analysis to improve participant outcomes, expand alumni engagement, and establish scalable systems for continuous learning and community growth — surpassing program expectations by +30% within 12 months.</li>
+            </ul>
+          </article>
+
+          <!-- Role 5 -->
+          <article aria-labelledby="role-w3edge">
+            <header class="role__header">
+              <h3 class="role__title" id="role-w3edge">Director of Web Optimization</h3>
+              <time class="role__dates" datetime="2011-07/2015-02">July 2011 – February 2015</time>
+            </header>
+            <p class="role__org">W3 EDGE · Boston, MA</p>
+            <ul class="role__bullets">
+              <li>Led professional services and client success operations for a global web optimization platform used by 1M+ websites, overseeing process improvement and technical learning initiatives that streamlined internal and external business operations.</li>
+              <li>Designed and implemented onboarding and knowledge systems that improved client enablement, reduced resolution times year over year, and strengthened cross-functional collaboration across engineering and product teams for 24+ continuous months.</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="resume-section" aria-labelledby="heading-education">
+        <h2 class="resume-section__heading" id="heading-education">Education</h2>
+        <p class="education__entry">
+          <strong>Bachelor of Science in Information Technology</strong> · Florida State University
+        </p>
+      </section>
+
+    </main>
+
+    <!-- =====================================================
+         SITE FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+      <p>Willie Jackson &nbsp;·&nbsp; Dallas, TX &nbsp;·&nbsp;
+        <a href="mailto:willie@williejackson.com">willie@williejackson.com</a>
+      </p>
+    </footer>
+
+  </div><!-- /.page -->
+</body>
+</html>
