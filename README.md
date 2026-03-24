@@ -1,6 +1,6 @@
 # cv.jackson2w.com
 
-Personal résumé site for Willie Jackson — Learning, Equity & Organizational Growth Leader.
+Personal résumé site for Willie Jackson — Senior HR & Talent Development Leader.
 
 **Live:** [cv.jackson2w.com](https://cv.jackson2w.com)
 
